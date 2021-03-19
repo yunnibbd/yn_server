@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{191808F9-2F3A-4754-8438-3E197072C6D6}</ProjectGuid>
+    <RootNamespace>ynserver</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../bin/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>../../tmp/$(ProjectName)/$(Platform)/$(Configuration)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../bin/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>../../tmp/$(ProjectName)/$(Platform)/$(Configuration)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../../bin/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>../../tmp/$(ProjectName)/$(Platform)/$(Configuration)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../../bin/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>../../tmp/$(ProjectName)/$(Platform)/$(Configuration)/</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="3rd\cJSON.c" />
+    <ClCompile Include="3rd\http_parser.c" />
+    <ClCompile Include="component\cconfig.cpp" />
+    <ClCompile Include="component\cmemory_pool.cpp" />
+    <ClCompile Include="component\csemaphore.cpp" />
+    <ClCompile Include="component\cthread.cpp" />
+    <ClCompile Include="component\cthread_pool.cpp" />
+    <ClCompile Include="misc\cabstract_client.cpp" />
+    <ClCompile Include="misc\cabstract_master_server.cpp" />
+    <ClCompile Include="misc\cabstract_server.cpp" />
+    <ClCompile Include="misc\cabstract_worker_client.cpp" />
+    <ClCompile Include="misc\cabstract_worker_server.cpp" />
+    <ClCompile Include="misc\cclient.cpp" />
+    <ClCompile Include="misc\cmaster_server_impl_epoll.cpp" />
+    <ClCompile Include="misc\cmaster_server_impl_iocp.cpp" />
+    <ClCompile Include="misc\cworker_client_impl_epoll.cpp" />
+    <ClCompile Include="misc\cworker_client_impl_iocp.cpp" />
+    <ClCompile Include="misc\cworker_server_impl_epoll.cpp" />
+    <ClCompile Include="misc\cworker_server_impl_iocp.cpp" />
+    <ClCompile Include="net\cbuffer.cpp" />
+    <ClCompile Include="net\cepoll.cpp" />
+    <ClCompile Include="net\ciocp.cpp" />
+    <ClCompile Include="net\ctimer.cpp" />
+    <ClCompile Include="utils\ccrypt.cpp" />
+    <ClCompile Include="utils\ctools.cpp" />
+    <ClCompile Include="yn_server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3rd\cJSON.h" />
+    <ClInclude Include="3rd\http_parser.h" />
+    <ClInclude Include="cconfig.h" />
+    <ClInclude Include="cmaster_server.h" />
+    <ClInclude Include="component\cconfig.h" />
+    <ClInclude Include="component\clog.h" />
+    <ClInclude Include="component\cmemory_pool.h" />
+    <ClInclude Include="component\cobject_pool.hpp" />
+    <ClInclude Include="component\csemaphore.h" />
+    <ClInclude Include="component\cthread.h" />
+    <ClInclude Include="component\cthread_pool.h" />
+    <ClInclude Include="cworker_client.h" />
+    <ClInclude Include="cworker_server.h" />
+    <ClInclude Include="enable_mem_pool.h" />
+    <ClInclude Include="export_api.h" />
+    <ClInclude Include="misc\cabstract_client.h" />
+    <ClInclude Include="misc\cabstract_master_server.h" />
+    <ClInclude Include="misc\cabstract_server.h" />
+    <ClInclude Include="misc\cabstract_worker_client.h" />
+    <ClInclude Include="misc\cabstract_worker_server.h" />
+    <ClInclude Include="misc\cclient.h" />
+    <ClInclude Include="misc\cmaster_server_impl_epoll.h" />
+    <ClInclude Include="misc\cmaster_server_impl_iocp.h" />
+    <ClInclude Include="misc\cworker_client_impl_epoll.h" />
+    <ClInclude Include="misc\cworker_client_impl_iocp.h" />
+    <ClInclude Include="misc\cworker_server_impl_epoll.h" />
+    <ClInclude Include="misc\cworker_server_impl_iocp.h" />
+    <ClInclude Include="net\cbuffer.h" />
+    <ClInclude Include="net\cepoll.h" />
+    <ClInclude Include="net\ciocp.h" />
+    <ClInclude Include="net\ctimer.h" />
+    <ClInclude Include="utils\ccrypt.h" />
+    <ClInclude Include="utils\ctools.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

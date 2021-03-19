@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>skynet WebSocket example</title>
+</head>
+<body>   
+  <script>
+    var ws = new WebSocket('ws://127.0.0.1:8000/ws');
+
+    ws.onopen = function(){
+    	console.log("open");
+    	var send_data = {
+    		"username": "yunni"
+    	};
+		ws.send(JSON.stringify(send_data)); 
+    };
+    ws.onmessage = function(ev){
+    	console.log(ev.data);
+    	console.log(typeof ev.data);
+    	var ret = JSON.parse(ev.data);
+    	console.log(ret['username']);
+    };
+    ws.onclose = function(ev){
+    	console.log("open");
+    };
+    ws.onerror = function(ev){
+        console.log(ev);
+        console.log("error");
+    };
+
+    setInterval(function () {
+    	var send_data = {
+    		"username": "yunni"
+    	};
+    	ws.send(JSON.stringify(send_data));
+    	console.log('发送数据完成');
+    }, 500);
+  </script>
+</body>
+</html>
